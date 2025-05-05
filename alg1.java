@@ -26,7 +26,7 @@ public class alg1 {
         long inicio = System.currentTimeMillis();
         System.out.println("Moda:"+moda(arreglo));
         long fin = System.currentTimeMillis();
-        System.out.println("Tiempo ALG2: " + (fin - inicio) + " ms");
+        System.out.println("Tiempo ALG1: " + (fin - inicio) + " ms");
         
     }
 }
