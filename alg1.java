@@ -19,9 +19,9 @@ public class alg1 {
         return moda;
     }
 
-    public static void ejecutar(int size, String mode) {
-        int[] arreglo = aleatorio.generateUniqueArray(size);  // o "pocas"
-        aleatorio.introduceRepetitions(arreglo, mode);
+    public static void ejecutar(int arreglo[]) {
+        // int[] arreglo = aleatorio.generateUniqueArray(size);  // o "pocas"
+        // aleatorio.introduceRepetitions(arreglo, mode);
 
         long inicio = System.currentTimeMillis();
         System.out.println("Moda:"+moda(arreglo));

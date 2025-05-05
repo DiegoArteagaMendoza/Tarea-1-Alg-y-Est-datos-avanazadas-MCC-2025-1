@@ -77,10 +77,8 @@ public class alg3 {
         return lista.stream().mapToInt(i -> i).toArray();
     }
     
-    public static void ejecutar(int size, String mode) {
-        int[] arreglo = aleatorio.generateUniqueArray(size); // o "pocas"
-        aleatorio.introduceRepetitions(arreglo, mode);
-    
+    public static void ejecutar(int arreglo[]) {
+   
         long inicio = System.currentTimeMillis();
         System.out.println("Moda:" + moda(arreglo));
         long fin = System.currentTimeMillis();
