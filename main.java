@@ -13,7 +13,13 @@ public class main {
         aleatorio.introduceRepetitions(arreglo, mode);
 
         alg1.ejecutar(arreglo);
+        System.out.println("---------------------------------");
+        System.out.println("ascendente");
         alg2.ejecutar(arreglo, "ascendente"); // Cambia a "pocas" o "muchas" según quieras
+        System.out.println("---------------------------------");
+        System.out.println("descendente");
+        alg2.ejecutar(arreglo, "descendente"); // Cambia a "pocas" o "muchas" según quieras
+        System.out.println("---------------------------------");
         alg3.ejecutar(arreglo); // Cambia a "pocas" o "muchas" según quieras
         tec.close();
     }
