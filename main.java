@@ -12,14 +12,17 @@ public class main {
         int[] arreglo = aleatorio.generateUniqueArray(size); // o "pocas"
         aleatorio.introduceRepetitions(arreglo, mode);
 
+        System.out.println("Arreglo 1");
         alg1.ejecutar(arreglo);
         System.out.println("---------------------------------");
+        System.out.println("Arreglo 2");
         System.out.println("ascendente");
         alg2.ejecutar(arreglo, "ascendente"); // Cambia a "pocas" o "muchas" según quieras
         System.out.println("---------------------------------");
         System.out.println("descendente");
         alg2.ejecutar(arreglo, "descendente"); // Cambia a "pocas" o "muchas" según quieras
         System.out.println("---------------------------------");
+        System.out.println("Arreglo 3");
         alg3.ejecutar(arreglo); // Cambia a "pocas" o "muchas" según quieras
         tec.close();
     }
