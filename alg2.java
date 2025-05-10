@@ -1,5 +1,4 @@
 import java.util.Arrays;
-
 public class alg2 {
 
     // Ordenar el arreglo en ascendente o descendente
@@ -48,6 +47,7 @@ public class alg2 {
         }
 
         if (frecuenciaActual > frecuenciaMax) {
+            frecuenciaMax = frecuenciaActual;
             moda = ordenado[ordenado.length - 1];
         }
 
@@ -55,11 +55,8 @@ public class alg2 {
     }
 
     public static void ejecutar(int arreglo[], String sentido) {
-        // int[] arreglo = aleatorio.generateUniqueArray(size);  // o "pocas"
-        // aleatorio.introduceRepetitions(arreglo, mode);
-
         long inicio = System.currentTimeMillis();
-        System.out.println("Moda:"+moda(arreglo, sentido)); // Cambia a "descendente" si lo deseas
+        System.out.println("Moda:" + moda(arreglo, sentido));
         long fin = System.currentTimeMillis();
         System.out.println("Tiempo ALG2: " + (fin - inicio) + " ms");
     }

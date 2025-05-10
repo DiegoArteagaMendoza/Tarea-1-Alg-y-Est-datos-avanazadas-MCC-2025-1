@@ -30,17 +30,19 @@ public class alg3 {
                     mayores.add(num);
             }
 
-            if (!iguales.isEmpty())
-                homog.add(convertirLista(menores.size() == 0 ? iguales : iguales));
-            if (!menores.isEmpty())
+            if (!iguales.isEmpty()) {
+                homog.add(convertirLista(iguales));
+            }
+            if (!menores.isEmpty()) {
                 heterog.add(convertirLista(menores));
-            if (!mayores.isEmpty())
+            }
+            if (!mayores.isEmpty()) {
                 heterog.add(convertirLista(mayores));
+            }
             heterog.remove(maxHeterog);
         }
     }
 
-    // Divide en grupos de 5 y calcula la mediana de las medianas
     public static int medianOfMedians(int[] arr) {
         if (arr.length <= 5) {
             Arrays.sort(arr);
@@ -76,13 +78,11 @@ public class alg3 {
     private static int[] convertirLista(List<Integer> lista) {
         return lista.stream().mapToInt(i -> i).toArray();
     }
-    
+
     public static void ejecutar(int arreglo[]) {
-   
         long inicio = System.currentTimeMillis();
         System.out.println("Moda:" + moda(arreglo));
         long fin = System.currentTimeMillis();
         System.out.println("Tiempo ALG3: " + (fin - inicio) + " ms");
-    
     }
 }
